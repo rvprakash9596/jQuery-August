@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>jQuery Fade-Out An Element</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("#div1").fadeOut();//by default duration 4s
+            $("#div2").fadeOut("slow");
+            $("#div3").fadeOut(2000);
+            $("#div4").fadeOut("fast");
+        });
+    });
+</script>
+<style>
+div{
+    height: 100px;
+    width: 100px;
+    border: 2px solid red;
+    float: left;
+}
+#div1{
+    background-color: blue;
+}
+#div2{
+    background-color: green;
+}
+#div3{
+    background-color: deeppink;
+}
+#div4{
+    background-color: orange;
+}
+</style>
+</head>
+<body>
+    <h1>Fade An HTML Element</h1>
+    <p>four divs will fade out below on the click of a button</p>
+    <button>Fade Out</button><br><br>
+    <div id="div1">Div1</div>
+    <div id="div2">Div2</div>
+    <div id="div3">Div3</div>
+    <div id="div4">Div4</div>
+</body>
+</html>
