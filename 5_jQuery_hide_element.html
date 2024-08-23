@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Hide HTML Element</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("h2").click(function(){
+            $(this).hide();
+        });
+    });
+</script>
+<style>
+    h2{
+        background-color: black;
+        color: white;
+        display: inline;
+        border: 2px double red;
+        padding: 2px;
+        border-radius: 5px;
+    }
+</style>
+</head>
+<body>
+    <h1>This is heading level 1</h1>
+    <h2>Hide me</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis, iusto.</p>
+</body>
+</html>
