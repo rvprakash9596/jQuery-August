@@ -1,0 +1,54 @@
+<html>
+<head>
+    <title>Selector in jQuery</title>
+     <!-- Adding CDN Link  -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        //jQuery Script Body
+        $(document).ready(function(){
+            $("button").click(function(){
+                //$("h1").hide();// valid
+                $("h1,div").hide(); //valid
+            });
+        });
+    </script>
+    <style>
+        button{
+            height: 30px;
+            width: 300px;
+            background-color: purple;
+            border-radius: 5px;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+            border: 2px solid greenyellow;
+            margin-top: 10px;
+        }
+        h1{
+            text-align: center; 
+            color: blue;
+        }
+        h2{
+            color: red;
+        }
+        div{
+            height: 120px;
+            width: 200px;
+            background-color: blanchedalmond;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1>मंजिल से ज्यादा खूबसूरत रास्ते होते हैं।</h1>
+    <h2>jQuery Selector Program</h2>
+    <p>We have to learn this</p>
+    <div>
+        <p>Let's start Journey of jquery</p>
+        <p>Start Now</p>
+    </div>
+    <button>Hide Element using Element Selector</button>
+</body>
+</html>

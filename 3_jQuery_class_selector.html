@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>jQuery class selector</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $(".demo1").hide();
+            $(".d1").hide();
+        });
+    });
+</script>
+<style>
+    button{
+        height: 30px;
+            width: 250px;
+            background-color: purple;
+            border-radius: 5px;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+            border: 2px solid greenyellow;
+            margin-top: 10px;
+    }
+</style>
+</head>
+<body>
+    <h1 class="demo1">We can't undo the things , but we can make next step better.</h1>
+    <h2>Yes brother</h2>
+    <div class="d1">
+        <p>This is true fact</p>
+        <p>I also do same things.</p>
+    </div>
+    <button>Hide Element using class selector</button>
+</body>
+</html>

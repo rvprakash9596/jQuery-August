@@ -1,0 +1,332 @@
+						jQuery :: Amit Thinks [23-Aug-2024]
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+						Introduction To jQuery
+					--------------------------------------
+
+jQuery is a JavaScript Library that came in the year 2006.
+It was created by "John Resig" to ease JavaScript Programming.
+After learning the concept of jQuery , it will be easier for a developer to work with JavaScript.
+It is a "write less, do more" JavaScript library.
+
+jQuery eases JavaScript code.
+The same code you run in the JavaScript with many lines can be easily worked with jQuery and lessened to a single line of code.
+
+
+						   jQuery - Features
+					--------------------------------------
+Following are the main features of jQuery
+
+Selectors : Use the jQuery selectors to select an HTML element and manipulate it.
+
+Animation : Animate a div or any other element with jQuery.
+
+CSS Manipulation : Manipulate an element and apply CSS style to it with jQuery.
+
+jQuery AJAX : jQuery has a rich set of AJAX methods for developing modern web Applications.
+
+Event Methods : Call event methods with jQuery. Events are the user's actions , a web page can respond to , such as page load , mouse click , keystroke etc..
+
+jQuery Traversing : jQuery provides DOM traversal methods to locate descendent elements , find sibling elements etc.
+
+Plugins : jQuery has many plugins such as for creating split pages, create slideshow , progressbar , etc. With that , you can also create your own custom plugin.
+
+							   
+						jQuery - Set Environment
+					--------------------------------------
+
+How to add jQuery in a webpage :
+--------------------------------
+We can set environment for jQuery using any of the following methods :
+
+Method 1: Download jQuery from the official website jquery.com
+
+Method 2: directly use CDN i.e. Content Delivery network (faster).
+
+Method 2: CDn for jQuery
+------------------------
+Follow the below given steps for method 2 and directly use CDN and run jQuery:
+
+Step 1: Install VS Code.
+Step 2: Set Environment , add jQuery on a webpage and understand the structure.
+
+
+						jQuery - Add jQuery in a webpage
+					----------------------------------------------
+
+<html>
+<head>
+    <title>jQuery1</title>
+     <!-- Adding CDN Link  -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        // Adding jQuery Script Body
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+					
+						jQuery - Syntax & 1st program
+					---------------------------------------------
+jQuery uses a document ready event, which we will learn in the upcoming lessons also.
+ 
+$(document).ready(function() {  
+   // code
+});
+
+The above function prevents the code from running before the document is ready.
+
+Program 1:
+----------
+
+<html>
+<head>
+    <title>jQuery1</title>
+     <!-- Adding CDN Link  -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        //jQuery Script Body
+        $(document).ready(function(){
+            document.write("Hello jQuery");
+        });
+    </script>
+</head>
+<body>
+    <h1>First jQuery Program</h1>
+</body>
+</html>
+
+
+							jQuery - click() Method
+						---------------------------------------
+Use the jQuery click() method to trigger an event on the click of an element. For example, on click, it generates an alert box.
+
+Syntax : 	$(selector).click(function(){
+--------		// code
+		});
+
+
+Example :
+---------
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<script>
+$(document).ready(function(){
+   $("h2").click(function(){
+     alert("You clicked me.");
+   });
+});
+</script>
+</head>
+<body>
+ 
+<h2>I am a heading.</h2>
+<p>This is a paragraph.</p>
+ 
+</body>
+</html>
+ 
+
+
+							jQuery - Selectors
+						----------------------------------
+
+jQuery Selectors is used to select an HTML element and manipulate it. Selector starts with a dollar sign ($) and parentheses as you can see below.
+
+$()
+
+An element can have an ID,Class,Attribute,Name,Values etc.With jQuery,you can easily select element or elements based on their id , class , etc..
+
+jQuery - Types of Selectors :
+-----------------------------
+1. jQuery Element (Tag) Selector
+2. jQuery #id Selector
+3. jQuery .class Selector
+
+1. jQuery Element (Tag) Selector :
+----------------------------------
+The jQuery element selector is used to select all the elements. The elements such as p, and div are selected based on the name of the element.
+
+The name of the element i.e. the tag name for the element selector goes as a parameter,
+
+==> $("div")
+==> $("p")
+==> $("h")
+and so more..
+
+Example :
+---------
+<html>
+<head>
+    <title>Selector in jQuery</title>
+     <!-- Adding CDN Link  -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        //jQuery Script Body
+        $(document).ready(function(){
+            $("button").click(function(){
+                //$("h1").hide();// valid
+                $("h1,div").hide(); //valid
+            });
+        });
+    </script>
+    <style>
+        button{
+            height: 30px;
+            width: 300px;
+            background-color: purple;
+            border-radius: 5px;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+            border: 2px solid greenyellow;
+            margin-top: 10px;
+        }
+        h1{
+            text-align: center; 
+            color: blue;
+        }
+        h2{
+            color: red;
+        }
+        div{
+            height: 120px;
+            width: 200px;
+            background-color: blanchedalmond;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1>मंजिल से ज्यादा खूबसूरत रास्ते होते हैं।</h1>
+    <h2>jQuery Selector Program</h2>
+    <p>We have to learn this</p>
+    <div>
+        <p>Let's start Journey of jquery</p>
+        <p>Start Now</p>
+    </div>
+    <button>Hide Element using Element Selector</button>
+</body>
+</html>
+
+2. jQuery #id Selector :
+------------------------
+The jQuery id selector uses the id attribute to select and element. For finding element a # character is used for the id selector .
+The name of the id is used preceded by a hash(#) character.
+
+==> $("#demo")
+
+<div id="#demo">
+	<p> division contents </p>  
+</div>
+
+Example :
+---------
+
+<html>
+<head>
+<title>jQuery Id selector</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("#d1").hide();
+            $("#demo1").hide();
+        });
+    });
+</script>
+</head>
+<body>
+    <h1 id="demo1">We can't undo the things , but we can make next step better.</h1>
+    <h2>Yes brother</h2>
+    <div id="d1">
+        <p>This is true fact</p>
+        <p>I also do same things.</p>
+    </div>
+    <button>Hide Element using id selector</button>
+</body>
+</html>
+
+
+3. jQuery .class Selector :
+---------------------------
+The jQuery class selector is used to find elements with a given class. For finding elements, a period character is used.
+
+The name of the class is used preceded by a period character,
+
+==> $(".demo")
+
+<div class="demo">
+  <p>div content</p>
+</div>
+
+Example :
+---------
+
+<html>
+<head>
+<title>jQuery class selector</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $(".demo1").hide();
+            $(".d1").hide();
+        });
+    });
+</script>
+<style>
+    button{
+        height: 30px;
+            width: 250px;
+            background-color: purple;
+            border-radius: 5px;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+            border: 2px solid greenyellow;
+            margin-top: 10px;
+    }
+</style>
+</head>
+<body>
+    <h1 class="demo1">We can't undo the things , but we can make next step better.</h1>
+    <h2>Yes brother</h2>
+    <div class="d1">
+        <p>This is true fact</p>
+        <p>I also do same things.</p>
+    </div>
+    <button>Hide Element using class selector</button>
+</body>
+</html>
+
+
+
+						jQuery - Hide an Element 
+				    ---------------------------------------------
+
+
+
+					
+
+
+
+
+
+
+
+
+
+
+
+
