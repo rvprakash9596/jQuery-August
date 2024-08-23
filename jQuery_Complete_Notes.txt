@@ -1,9 +1,11 @@
-						jQuery :: Amit Thinks [23-Aug-2024]
+							       jQuery
+						------------------------------------
+						@github: rvprakash9596 [23-Aug-2024]
 --------------------------------------------------------------------------------------------------------------------------------------
 
 
-						Introduction To jQuery
-					--------------------------------------
+							Introduction To jQuery
+						--------------------------------------
 
 jQuery is a JavaScript Library that came in the year 2006.
 It was created by "John Resig" to ease JavaScript Programming.
@@ -14,9 +16,9 @@ jQuery eases JavaScript code.
 The same code you run in the JavaScript with many lines can be easily worked with jQuery and lessened to a single line of code.
 
 
-						   jQuery - Features
-					--------------------------------------
-Following are the main features of jQuery
+						   	   jQuery - Features
+						--------------------------------------
+Following are the main features of jQuery :
 
 Selectors : Use the jQuery selectors to select an HTML element and manipulate it.
 
@@ -33,8 +35,8 @@ jQuery Traversing : jQuery provides DOM traversal methods to locate descendent e
 Plugins : jQuery has many plugins such as for creating split pages, create slideshow , progressbar , etc. With that , you can also create your own custom plugin.
 
 							   
-						jQuery - Set Environment
-					--------------------------------------
+							jQuery - Set Environment
+						--------------------------------------
 
 How to add jQuery in a webpage :
 --------------------------------
@@ -44,7 +46,7 @@ Method 1: Download jQuery from the official website jquery.com
 
 Method 2: directly use CDN i.e. Content Delivery network (faster).
 
-Method 2: CDn for jQuery
+Method 2: CDN for jQuery
 ------------------------
 Follow the below given steps for method 2 and directly use CDN and run jQuery:
 
@@ -52,8 +54,8 @@ Step 1: Install VS Code.
 Step 2: Set Environment , add jQuery on a webpage and understand the structure.
 
 
-						jQuery - Add jQuery in a webpage
-					----------------------------------------------
+							jQuery - Add jQuery in a webpage
+						----------------------------------------------
 
 <html>
 <head>
@@ -61,7 +63,7 @@ Step 2: Set Environment , add jQuery on a webpage and understand the structure.
      <!-- Adding CDN Link  -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script>
-        // Adding jQuery Script Body
+        // jQuery Script Body
     </script>
 </head>
 <body>
@@ -70,8 +72,9 @@ Step 2: Set Environment , add jQuery on a webpage and understand the structure.
 </html>
 
 					
-						jQuery - Syntax & 1st program
-					---------------------------------------------
+							jQuery - Syntax & 1st program
+						---------------------------------------------
+
 jQuery uses a document ready event, which we will learn in the upcoming lessons also.
  
 $(document).ready(function() {  
@@ -101,8 +104,9 @@ Program 1:
 </html>
 
 
-							jQuery - click() Method
-						---------------------------------------
+								jQuery - click() Method
+							---------------------------------------
+
 Use the jQuery click() method to trigger an event on the click of an element. For example, on click, it generates an alert box.
 
 Syntax : 	$(selector).click(function(){
@@ -218,6 +222,7 @@ Example :
 </body>
 </html>
 
+
 2. jQuery #id Selector :
 ------------------------
 The jQuery id selector uses the id attribute to select and element. For finding element a # character is used for the id selector .
@@ -255,6 +260,7 @@ Example :
     <button>Hide Element using id selector</button>
 </body>
 </html>
+
 
 
 3. jQuery .class Selector :
@@ -311,8 +317,646 @@ Example :
 
 
 
-						jQuery - Hide an Element 
-				    ---------------------------------------------
+							jQuery - Hide an Element 
+				    	    ---------------------------------------------
+
+To hide an HTML Element , use the jQuery hide() method.
+
+Example :
+---------
+
+<html>
+<head>
+<title>Hide HTML Element</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("h2").click(function(){
+            $(this).hide();
+        });
+    });
+</script>
+<style>
+    h2{
+        background-color: black;
+        color: white;
+        display: inline;
+        border: 2px double red;
+        padding: 2px;
+        border-radius: 5px;
+    }
+</style>
+</head>
+<body>
+    <h1>This is heading level 1</h1>
+    <h2>Hide me</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis, iusto.</p>
+</body>
+</html>
+
+
+						          jQuery - Show an Element 
+				    		---------------------------------------------
+
+To show an HTML element, use the jQuery show() method.
+
+example :
+---------
+
+<html>
+<head>
+<title>Show HTML Element</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+       $(".hm").click(function(){
+        $("p").hide();
+       });
+       $(".sm").click(function(){
+        $("p").show();
+       });
+    });
+</script>
+<style>
+    h2{
+        background-color: black;
+        color: white;
+        display: inline;
+        border: 2px double red;
+        padding: 2px;
+        border-radius: 5px;
+    }
+</style>
+</head>
+<body>
+    <h1>This is heading level 1</h1>
+    <h2 class="hm">Hide Lorem Paragraph</h2><br><br>
+    <h2 class="sm">Show Lorem Paragraph</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis, iusto.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta id soluta cumque aperiam rerum molestias dolorem esse, ipsum debitis at asperiores officiis ullam nemo quas laborum, ratione voluptates, aliquam illo quidem temporibus perspiciatis voluptatem est? Exercitationem eveniet nostrum suscipit voluptatum sint corporis nobis laboriosam maxime id? Cumque corporis omnis esse delectus, accusamus fugiat voluptatibus temporibus dignissimos cum. Accusantium illum vero recusandae laboriosam illo neque quod labore rem aliquid non nesciunt nemo, itaque fugiat. Pariatur ratione aliquam consequuntur velit nobis tempora dolore autem maiores illo repellat molestias facere molestiae quas corporis mollitia deserunt quisquam saepe, veniam blanditiis. Ducimus explicabo illum ipsa!
+    </p>
+</body>
+</html>
+
+
+
+
+							jQuery - Toggle an Element 
+				    		---------------------------------------------
+
+To toggle an HTML element , create a button and set the toggle on it , using the jQuery toggle() Method.
+
+Example :
+---------
+
+<html>
+<head>
+<title>Toggle an Element</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("p").toggle();
+    });
+});
+</script>
+<style>
+    button:hover{
+        background-color: red;
+        cursor: pointer;
+    }
+    p{
+        color: green;
+        font-size: 20px;
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+    <h1>This is toggle button example using jQuery</h1>
+    <button>Toggle me</button>
+    <p>This is a demo text</p>
+</body>
+</html>
+
+
+
+							 jQuery - Fade an Element 
+				    		---------------------------------------------
+
+With jQuery, we can easily fade any HTML element. Fade means making an element to hide or show in and out. 
+
+1. fadeIn(): Fade in an element . To fade in an invisible element, use the jQuery fadeIn() method.
+2. fadeOut(): Fade out an element . To fade out a visible element, use the jQuery fadeOut() method.
+3. fadeToggle(): Fade toggle an element . Set both the fade and fade out if you want to set a toggle button. The  jQuery fadeToggle() method fulfills this purpose. You can easily toggle between the fadeIn() and fadeOut() methods using the fadeToggle().
+
+
+
+1. Fade-In 
+
+Example :
+---------
+<html>
+<head>
+<title>jQuery Fade-In An Element</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("#div1").fadeIn();// fadein bydefault duration 4s
+            $("#div2").fadeIn("slow");
+            $("#div3").fadeIn(2000);
+            $("#div4").fadeIn("fast");
+        });
+    });
+</script>
+<style>
+div{
+    height: 100px;
+    width: 100px;
+    border: 2px solid red;
+    display: none;
+    float: left;
+}
+#div1{
+    background-color: blue;
+}
+#div2{
+    background-color: green;
+}
+#div3{
+    background-color: deeppink;
+}
+#div4{
+    background-color: orange;
+}
+</style>
+</head>
+<body>
+    <h1>Fade An HTML Element</h1>
+    <p>four divs will fade in below on the click of a button</p>
+    <button>Fade In</button><br><br>
+    <div id="div1">Div1</div>
+    <div id="div2">Div2</div>
+    <div id="div3">Div3</div>
+    <div id="div4">Div4</div>
+</body>
+</html>
+
+2. Fade-Out
+
+Example :
+---------
+<html>
+<head>
+<title>jQuery Fade-Out An Element</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("#div1").fadeOut();// fadein bydefault duration 4s
+            $("#div2").fadeOut("slow");
+            $("#div3").fadeOut(2000);
+            $("#div4").fadeOut("fast");
+        });
+    });
+</script>
+<style>
+div{
+    height: 100px;
+    width: 100px;
+    border: 2px solid red;
+    float: left;
+}
+#div1{
+    background-color: blue;
+}
+#div2{
+    background-color: green;
+}
+#div3{
+    background-color: deeppink;
+}
+#div4{
+    background-color: orange;
+}
+</style>
+</head>
+<body>
+    <h1>Fade An HTML Element</h1>
+    <p>four divs will fade out below on the click of a button</p>
+    <button>Fade Out</button><br><br>
+    <div id="div1">Div1</div>
+    <div id="div2">Div2</div>
+    <div id="div3">Div3</div>
+    <div id="div4">Div4</div>
+</body>
+</html>
+
+
+3. Fade-Toggle :
+----------------
+
+Example :
+---------
+<html>
+<head>
+<title>jQuery Fade-Toggle An Element</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("#div1").fadeToggle();//by default duration 4s
+            $("#div2").fadeToggle("slow");
+            $("#div3").fadeToggle(2000);
+            $("#div4").fadeToggle("fast");
+        });
+    });
+</script>
+<style>
+div{
+    height: 100px;
+    width: 100px;
+    border: 2px solid red;
+    float: left;
+}
+#div1{
+    background-color: blue;
+}
+#div2{
+    background-color: green;
+}
+#div3{
+    background-color: deeppink;
+}
+#div4{
+    background-color: orange;
+}
+</style>
+</head>
+<body>
+    <h1>Fade An HTML Element</h1>
+    <p>four divs will fade toggled below on the click of a button</p>
+    <button>Fade Toggle</button><br><br>
+    <div id="div1">Div1</div>
+    <div id="div2">Div2</div>
+    <div id="div3">Div3</div>
+    <div id="div4">Div4</div>
+</body>
+</html>
+
+
+
+							 jQuery - Slide Elements
+						-----------------------------------------
+
+To set a sliding effect on HTML elements, jQuery provides the sliding effect. This is an effect that increases and decreases the height of an element with the click of a button.
+
+1. slideDown()
+2. slideUp()
+3. slideToggle()
+
+1. jQuery Slide Down :
+----------------------
+To slide down an HTML element, use the slideDown() method in jQuery.
+
+
+Example :
+---------
+<html>
+<head>
+<title>Slide Down</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $("#d1").click(function(){
+            $("#d2").slideDown("500");
+            //$("#d2").slideDown("fast");
+            //$("#d2").slideDown("slow");
+        });
+    });
+</script>
+<style>
+    #d1,#d2{
+       padding: 15px;
+       text-align: center;
+       font-size: 25px;
+       background-color: black;
+       border: 2px double red;
+       color: white;
+       border-radius: 5px;
+    }
+    #d2{
+        display: none;
+        padding: 75px;
+        font-size: 35px;
+        /* background-color: orangered; */
+        border: 5px solid blue;
+    }
+</style>
+</head>
+<body>
+    <p>Click the below div to Slide down </p>
+    <div id="d1">Slide Down by clicking here</div>
+    <div id="d2" style="margin-top: 20px;">Saurabh Caterers</div>
+</body>
+</html>
+
+2. jQuery Slide UP :
+--------------------
+To slide up an HTML element, use the slideUp() method in jQuery.
+
+Example :
+---------
+<html>
+<head>
+<title>Slide Up</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $("#d1").click(function(){
+            $("#d2").slideUp("1000");
+            // $("#d2").slideUp("fast");
+            // $("#d2").slideUp("slow");
+        });
+    });
+</script>
+<style>
+    #d1,#d2{
+       padding: 15px;
+       text-align: center;
+       font-size: 25px;
+       background-color: black;
+       border: 2px double red;
+       color: yellow;
+       border-radius: 5px;
+    }
+    #d2{
+        padding: 75px;
+        font-size: 35px;
+        /* background-color: orangered; */
+        border: 5px solid blue;
+    }
+    #d1{
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+    <p>Click the below div to Slide Up.. </p>
+    <div id="d1">Slide Up by clicking here</div>
+    <div id="d2" style="margin-top: 20px;">Saurabh Caterers</div>
+</body>
+</html>
+
+
+3. jQuery Slide Toggle :
+------------------------
+Slide up and down elements if you set a toggle button. The  jQuery slideToggle() method fulfills this purpose. You can easily toggle between the slideUp() and slideDown() methods using the slideToggle().
+Slide up the elements if they are sliding down using the slideUp() method in jQuery. Slide down the elements if they are sliding up using the slideDown() method in jQuery.
+
+Example :
+---------
+
+<html>
+<head>
+<title>Slide Toggle</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $("#d1").click(function(){
+            $("#d2").slideToggle("1000");
+            // $("#d2").slideToggle("fast");
+            // $("#d2").slideToggle("slow");
+        });
+    });
+</script>
+<style>
+    #d1,#d2{
+       padding: 15px;
+       text-align: center;
+       font-size: 25px;
+       background-color: black;
+       border: 2px double red;
+       color: yellow;
+       border-radius: 5px;
+    }
+    #d2{
+        padding: 75px;
+        font-size: 35px;
+        /* background-color: orangered; */
+        border: 5px solid blue;
+    }
+    #d1{
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+    <p>Click the below div to Slide Toggle.. </p>
+    <div id="d1">Slide Toggle by clicking here</div>
+    <div id="d2" style="margin-top: 20px;">Saurabh Caterers</div>
+</body>
+</html>
+
+
+							     jQuery - Create Animation
+						     -----------------------------------------
+
+To create Animations on a web page , use the jQuery animate() method . To move an element on a web page , you need to also use the position position property.Set the value to relative,fixed,or absolute for the HTML element.
+Let's see how to :
+1. Animate a div with animate() method
+2. Animate a div with animate() method - use multiple properties
+
+1. Animate a div with animate() method :
+----------------------------------------
+To animate a div, use the animate() method. In the below example, we have animated a div and moved it to the right. The left property is set to 300px and this is the limit till when the div will animate:
+
+Example :
+---------
+<html>
+<head>
+<title>Animate A Div</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("div").animate({left:`300px`});
+        });
+    });
+</script>
+<style>
+    div{
+        position: absolute;
+        background-color: black;
+        color: yellow;
+        padding: 20px;
+        border: 12px double blue;
+        margin-top: 10px;
+        border-radius: 8px;
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+    <h1>RaviPrakash4344</h1>
+    <p>Click the below button to animate the below box.</p>
+    <button>Animate Button</button>
+    <div>This box will get animated using jQuery</div>
+</body>
+</html>
+
+
+2. Animate a div with animate() method - use multiple properties :
+------------------------------------------------------------------
+In this example, we will animate a Div and update the height, width, and font size as well. With jQuery, we can easily animate a div using the animate() method and update the div properties alongside. That means we can change multiple properties of that specific element.
+Let us see an example where we will animate a div and update the height, width, and font size properties as well. 
+For the animate() method, the font-size property is to be written in camel-case i.e. fontSize. This works for other properties as well:
+
+Example :
+---------
+<html>
+<head>
+<title>Animation div 2</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("div").animate({
+                left :`200px`,
+                height:`100px`,
+                width:`400px`,
+                fontSize: `30px`
+            });
+        });
+    });
+</script>
+<style>
+    div{
+        position: absolute;
+        background-color: black;
+        color: yellow;
+        padding: 20px;
+        border: 12px double blue;
+        margin-top: 10px;
+        border-radius: 8px;
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+    <h1>RaviPrakash4344</h1>
+    <p>Click the below button to animate the below box.</p>
+    <button>Animate Button</button>
+    <div>This box will get animated using jQuery and the properties will also changed</div>
+</body>
+</html>
+
+
+							jQuery - Traversing
+						------------------------------------
+
+Introduction to jQuery Traversing :
+-----------------------------------
+Consider an HTML web page as a DOM tree. Traversing means moving through the tree, like moving up, down, etc. Therefore, the need to understand the concept of Ancestors, Descendants, and Siblings is a must in jQuery. Consider the Ancestor is a parent, the Descendants are children, whereas the Siblings have similar parents.
+
+Now, you must be wondering what DOM is. The Document Object Model (DOM) defines the logical structure of documents and the way a document is accessed and manipulated. It is a W3C (World Wide Web Consortium) standard.
+
+Let us understand the traversing using the below figure:
+
+
+
+							div         <-------------Parent(Ancestor)
+							 |
+							 |
+					-----------------------------------------
+					|					|
+       left child of div --------->    ul					ol       <----- right child of div
+					|					|
+			     -----------------------                ----------------------------
+			     |			   |		    |                          |
+			    li			  li   		   li			       li
+			     |			   |                |                           |
+	             -----------------				    |				|
+                     |               |				  strong		      strong
+		   span             span
+
+
+
+
+jQuery – Find Ancestors of an element :
+---------------------------------------
+An Ancestor is a parent, grandparent, great grand-parent of an element. Let us see the above figure again:
+
+The <div> is the parent of <ul> and <ol>
+The <ul> element is the parent of both the <li> elements
+The <ol> element is the parent of both the <li> elements
+The left child of the <ul> is <li>. This <li> is the parent of both the <span> elements
+The left and right child of the <ol> is <li>. This <li> is the parent of <strong>
+
+Ancestors suggest traversing up in the DOM tree and the following are the supported methods in jQuery:
+
+1. parent() : returns the direct parent element of the selected element
+2. parents() : returns all the ancestor elements of the selected element
+3. parentsUntil() : returns the ancestors between two element
+
+Let us learn about each method one by one:
+
+1.The parent() method in jQuery :
+---------------------------------
+
+<html>
+<head>
+<title>jQuery Traversing - parent() method</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("span").parent().css({"background":"black", "color":"white", "border":"5px solid red"});
+    });
+</script>
+<style>
+    .ancestors *{
+        display: block;
+        border: 5px solid teal;
+        font-size: 20px;
+        margin-top: 10px;
+        padding: 10px;    
+    }
+</style>
+</head>
+<body>
+<h1 style="text-align: center; color:red ">jQuery-Traversing : parent()</h1>
+<div class="ancestors">
+    <div style="width: 600px;"> div (great grandparent)
+        <ul> ul (grandparent)
+            <li> li (parent)
+                <span>span</span>
+                <span>span</span>
+            </li>
+            <li>li
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
+
+
+
+2.The parents() method (ancestors) in jQuery :
+----------------------------------------------
+
+
+
+
+
+
+
+
+
 
 
 
