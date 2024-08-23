@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Toggle an Element</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("p").toggle();
+    });
+});
+</script>
+<style>
+    button:hover{
+        background-color: red;
+        cursor: pointer;
+    }
+    p{
+        color: green;
+        font-size: 20px;
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+    <h1>This is toggle button example using jQuery</h1>
+    <button>Toggle me</button>
+    <p>This is a demo text</p>
+</body>
+</html>
