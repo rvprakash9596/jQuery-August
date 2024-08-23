@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>Show HTML Element</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+       $(".hm").click(function(){
+        $("p").hide();
+       });
+       $(".sm").click(function(){
+        $("p").show();
+       });
+    });
+</script>
+<style>
+    h2{
+        background-color: black;
+        color: white;
+        display: inline;
+        border: 2px double red;
+        padding: 2px;
+        border-radius: 5px;
+    }
+</style>
+</head>
+<body>
+    <h1>This is heading level 1</h1>
+    <h2 class="hm">Hide Lorem Paragraph</h2><br><br>
+    <h2 class="sm">Show Lorem Paragraph</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis, iusto.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta id soluta cumque aperiam rerum molestias dolorem esse, ipsum debitis at asperiores officiis ullam nemo quas laborum, ratione voluptates, aliquam illo quidem temporibus perspiciatis voluptatem est? Exercitationem eveniet nostrum suscipit voluptatum sint corporis nobis laboriosam maxime id? Cumque corporis omnis esse delectus, accusamus fugiat voluptatibus temporibus dignissimos cum. Accusantium illum vero recusandae laboriosam illo neque quod labore rem aliquid non nesciunt nemo, itaque fugiat. Pariatur ratione aliquam consequuntur velit nobis tempora dolore autem maiores illo repellat molestias facere molestiae quas corporis mollitia deserunt quisquam saepe, veniam blanditiis. Ducimus explicabo illum ipsa!
+    </p>
+</body>
+</html>
