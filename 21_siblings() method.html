@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>siblings() in jQuery</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("p").siblings().css({"color":"blue","font-size":"24px","border":"4px solid green"});
+    });
+</script>
+<style>
+.siblings *{
+    display: block;
+    border: 2px dashed blue;
+    color: orangered;
+    font-size: 20px;
+    margin: 10px;
+    padding: 20px;
+}
+</style>
+</head>
+<body>
+<div class="siblings">
+    <div style="width: 800px;">
+        <h1>H1</h1>
+        <p>P</p>
+        <h2>H2</h2>
+        <h3>H3</h3>
+        <ol>
+            <li>LI 1</li>
+            <li>LI 2</li>
+        </ol>
+    </div>
+</div>
+</body>
+</html>
