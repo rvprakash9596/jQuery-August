@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+$(document).ready(function(){
+   $("h1").nextUntil("ol").css({"color": "blue", "font-size": "24px","border": "4px solid red"});
+});
+</script>
+<style>
+.siblings * { 
+  display: block;
+  border: 4px dashed black;
+  color: black;
+  font-size: 20px;
+  padding: 10px;
+  margin: 10px;
+}
+</style>
+</head>
+<body>
+ 
+<div class="siblings">
+  <div style="width:600px;">--- parent --- 
+    <h1>h1</h1>
+    <p>p</p>
+    <h2>h2</h2>
+    <ol>ol
+       <li>li</li>
+       <li>li</li>
+    </ol>
+  </div>
+</div>
+ 
+</body>
+</html>
