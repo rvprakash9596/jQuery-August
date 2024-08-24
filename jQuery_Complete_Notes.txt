@@ -1077,25 +1077,797 @@ Example :
 </html>
 
 
+						jQuery – Find Descendants of an element :
+						-----------------------------------------
+A Descendant is a child, grandchild, and great grand-child of an element. Let us see the figure again:
+
+
+
+							div         <-------------Parent(Ancestor)
+							 |
+							 |
+					-----------------------------------------
+					|					|
+       left child of div --------->    ul					ol       <----- right child of div
+					|					|
+			     -----------------------                ----------------------------
+			     |			   |		    |                          |
+			    li			  li   		   li			       li
+			     |			   |                |                           |
+	             -----------------				    |				|
+                     |               |				  strong		      strong
+		   span             span
 
 
 
 
+Descendants suggest traversing down in the DOM tree and the following are the supported methods in jQuery:
+
+1. children()
+2. find()
+
+
+1. The children() method in jQuery :
+------------------------------------
+If you want to return the children of the selected element, use the jQuery children() method. Since it returns the direct children, therefore it traverses down .
+
+<html>
+<head>
+    <title>children() method in jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("ul").children().css({"color":"blue","font-size":"24px" , "border":"4px solid red"})
+        });
+    </script>
+</head>
+<style>
+    .descendants *{
+        display: block;
+        border: 4px dashed teal;
+        color: orange;
+        font-size: 20px;
+        padding: 10px;
+        margin: 10px;
+    }
+</style>
+<body>
+    <h1>children() in jQuery</h1>
+    <div class="descendants">
+        <div style="width: 600px;">div (great grandparent)
+            <ul>ul (grandparent)
+                <li>li (parent)
+                    <span>span</span>
+                    <span>span</span>
+                </li>
+                <li>li
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+
+
+2. The find() method in jQuery :
+--------------------------------
+
+To return the descendant elements of the selected element, use the jQuery find() method. Let us see an example to return all <span> elements that are descendants of <div>:
+
+<html>
+<head>
+    <title>find() method in jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("div").find("li").css({"color":"blue","font-size":"24px" , "border":"4px solid red"})
+        });
+    </script>
+</head>
+<style>
+    .descendants *{
+        display: block;
+        border: 4px dashed teal;
+        color: orange;
+        font-size: 20px;
+        padding: 10px;
+        margin: 10px;
+    }
+</style>
+<body>
+    <h1>find() in jQuery</h1>
+    <div class="descendants">
+        <div style="width: 600px;">div (great grandparent)
+            <ul>ul (grandparent)
+                <li>li (parent)
+                    <span>span</span>
+                    <span>span</span>
+                </li>
+                <li>li
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+
+
+						jQuery – Find Siblings of an element
+					------------------------------------------------------
+
+In jQuery, we can easily find the siblings of an element. Let us see the figure again:
+
+
+							div         <-------------Parent(Ancestor)
+							 |
+							 |
+					-----------------------------------------
+					|					|
+       left child of div --------->    ul					ol       <----- right child of div
+					|					|
+			     -----------------------                ----------------------------
+			     |			   |		    |                          |
+			    li			  li   		   li			       li
+			     |			   |                |                           |
+	             -----------------				    |				|
+                     |               |				  strong		      strong
+		   span             span		
+
+
+In the above figure, the <ul> and <ol> are siblings since they have the same parent .
+Siblings suggest traversing sideways in the DOM tree and the following are the supported methods in jQuery:
+
+1. siblings() 	: Returns the siblings of the selected elements. 
+2. next()	: Returns the next siblings of the selected elements.
+3. nextAll()	: Returns all the next siblings of the selected elements.
+4. nextUntil()	: Returns all the next siblings between two elements.
+5. prev()	: Returns the previous sibling of the selected elements.
+6. prevAll()	: Returns all the previous siblings of the selected elements.
+7. prevUntil()	: Returns all the previous siblings between two elements.
+
+
+1. The siblings() method in jQuery :
+------------------------------------
+As the name suggests, the siblings() method returns the siblings of the selected element. Let us see an example. We will find the siblings of the <p> element:
+
+<html>
+<head>
+<title>siblings() in jQuery</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("p").siblings().css({"color":"blue","font-size":"24px","border":"4px solid green"});
+    });
+</script>
+<style>
+    .siblings *{
+        display: block;
+        border: 2px dashed blue;
+        color: orangered;
+        font-size: 20px;
+        margin: 10px;
+        padding: 20px;
+    }
+</style>
+</head>
+<body>
+<div class="siblings">
+    <div style="width: 800px;">
+        <h1>H1</h1>
+        <p>P</p>
+        <h2>H2</h2>
+        <h3>H3</h3>
+        <ol>
+            <li>LI 1</li>
+            <li>LI 2</li>
+        </ol>
+    </div>
+</div>
+</body>
+</html>
+
+
+2. The next() method in jQuery :
+--------------------------------
+To return the next sibling of the selected element, use the next() method in jQuery. Let us see an example. We will find the next sibling of <p>:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+$(document).ready(function(){
+   $("p").next().css({"color": "blue", "font-size": "24px","border": "4px solid red"});
+});
+</script>
+<style>
+.siblings * { 
+  display: block;
+  border: 4px dashed black;
+  color: black;
+  font-size: 20px;
+  padding: 10px;
+  margin: 10px;
+}
+</style>
+</head>
+<body>
+ 
+<div class="siblings">
+  <div style="width:600px;">--- parent --- 
+    <h1>h1</h1>
+    <p>p</p>
+    <h2>h2</h2>
+    <ol>ol
+       <li>li</li>
+       <li>li</li>
+    </ol>
+  </div>
+</div>
+ 
+</body>
+</html>
+
+
+3. The nextUntil() method in jQuery :
+-------------------------------------
+To return all the next siblings between two elements, use the nextUntil() method in jQuery. Let us see an example. We will find all the next siblings between <h1> and <ol>:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+$(document).ready(function(){
+   $("p").nextAll().css({"color": "blue", "font-size": "24px","border": "4px solid red"});
+});
+</script>
+<style>
+.siblings * { 
+  display: block;
+  border: 4px dashed black;
+  color: black;
+  font-size: 20px;
+  padding: 10px;
+  margin: 10px;
+}
+</style>
+</head>
+<body>
+<div class="siblings">
+  <div style="width:600px;">--- parent --- 
+    <h1>h1</h1>
+    <p>p</p>
+    <h2>h2</h2>
+    <ol>ol
+       <li>li</li>
+       <li>li</li>
+    </ol>
+  </div>
+</div>
+</body>
+</html>
+
+
+4. The prev() method in jQuery :
+--------------------------------
+To return the previous sibling of the selected element, use the prev() method in jQuery. Let us see an example. We will find the previous sibling of the <p> element:
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>prev() method in jQuery</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+$(document).ready(function(){
+   $("h2").prev().css({"color": "blue", "font-size": "24px","border": "4px solid red"});
+});
+</script>
+<style>
+.siblings * { 
+  display: block;
+  border: 4px dashed black;
+  color: black;
+  font-size: 20px;
+  padding: 10px;
+  margin: 10px;
+}
+</style>
+</head>
+<body>
+ 
+<div class="siblings">
+  <div style="width:600px;">--- parent --- 
+    <h1>h1</h1>
+    <p>p</p>
+    <h2>h2</h2>
+    <ol>ol
+       <li>li</li>
+       <li>li</li>
+    </ol>
+  </div>
+</div>
+ 
+</body>
+</html>
+
+
+
+						
+
+							 jQuery – Get Content
+						-------------------------------------
+
+
+To get the content from a web page using jQuery, we can use the 
+text() methods
+html() methods
+val() methods 
+In this lesson, we will learn how to,
+A. Get the Text of the selected element
+B. Get Content from the Form Fields
+
+A. Get the Text of the selected element :
+-----------------------------------------
+To get the text of the selected element in jQuery, use the text() and html() methods. Let us see an example wherein we will get the text of the <p> element with id demo:
+
+<html>
+<head>
+<title>text() & html() method in jQuery</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+$(document).ready(function(){
+   $("#btn1").click(function(){
+    alert($("#demo").text());
+   });
+   $("#btn2").click(function(){
+    alert($("#demo").html());
+   });
+});
+</script>
+<style>
+    #demo{
+        background-color: black;
+        color: white;
+        font-size: 20px;
+    }
+    button{
+        background-color: antiquewhite;
+        font-size: 20px;
+        color: black;
+        text-align: center;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover{
+        background-color: red;
+    }
+</style>
+</head>
+<body>
+    <p id="demo">This is a <em>demo text</em>.This is another <strong>demo text</strong>.</p>
+    <p>Click the below button to <b>get</b> the text content of the HTML </p>
+
+    <button id="btn1">Text</button>
+    <button id="btn2">HTML</button>
+</body>
+</html>
+
+
+B. Get Content from the Form Fields:
+------------------------------------
+To get the content of the Form fields,we use the val() method in jQuery.
+
+<html>
+<head>
+<title>val() method</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+$(document).ready(function(){
+   $("#btn1").click(function(){
+    alert("Student Name = "+$("#sname").val());
+   })
+   $("#btn2").click(function(){
+    alert("Student Branch = "+$("#sbranch").val());
+   });
+   $("#btn3").click(function(){
+    alert("Student Roll No = "+$("#srn").val());
+   })
+});
+</script>
+<style>
+    button{
+        background-color: antiquewhite;
+        font-size: 20px;
+        height: 35px;
+        color: black;
+        text-align: center;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover{
+        background-color: green;
+        color: white;
+    }
+</style>
+</head>
+<body>
+    <h1>Students Details</h1>
+    <p>Student Name:<input type="text" id="sname" value="Ravi Prakash"></p> 
+    <p>Student Branch:<input type="text" id="sbranch" value="CSE"></p> 
+    <p>Student RollNo:<input type="number" id="srn" value="27"></p> <br></br>
+
+    <button id="btn1">Get Student Name</button>
+    <button id="btn2">Get Student Branch</button>
+    <button id="btn3">Get Student RollNo</button>
+</body>
+</html>
+
+
+
+						          jQuery – Set Content
+						 -------------------------------------
+
+To set the content on a web page using jQuery, we can use the 
+text() methods
+html() methods
+val() methods
+
+In this lesson, we will learn how to,
+
+A. Set the Text of the selected element
+B. Set the Content of the Form Fields
+
+
+A. Set the Text of the selected element :
+-----------------------------------------
+To set the text of the selected element in jQuery, use the text() and html() methods. 
+
+<html>
+<head>
+<title></title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+$(document).ready(function(){
+   $("#btn1").click(function(){
+    $("p").text("This text is adding using jQuery text() method");
+   });
+   $("#btn2").click(function(){
+    $("p").html("This text is <em> adding using jQuery text()</em> <b> method</b>.");
+   });
+});
+</script>
+<style>
+    p{
+        background-color: black;
+        color: white;
+        font-size: 30px;
+        display: inline;
+    }
+    button{
+        background-color: antiquewhite;
+        font-size: 20px;
+        height: 35px;
+        color: black;
+        text-align: center;
+        border-radius: 5px;
+        cursor: pointer;
+        line-height: 35px;
+    }
+    button:hover{
+        background-color: green;
+        color: white;
+    }
+</style>
+</head>
+<body>
+    <p>Click below button to set the Text and HTML</p><br>
+
+    <button id="btn1">Set the Text</button>
+    <button id="btn2">Set the HTML</button>
+</body>
+</html>
+
+
+B. Set the Content of the Form Fields :
+---------------------------------------
+To set the content of the Form fields, use the val() method in jQuery.
+
+<html>
+<head>
+<title>Set val() method</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+$(document).ready(function(){
+   $("#btn1").click(function(){
+    $("#sname").val("Ravi Prakash");
+   });
+   $("#btn2").click(function(){
+    $("#sbranch").val("CSE");
+   });
+   $("#btn3").click(function(){
+    $("#srn").val("27");
+   })
+});
+</script>
+<style>
+    h1{
+        text-align: center;
+    }
+    button{
+        background-color: antiquewhite;
+        font-size: 20px;
+        height: 35px;
+        color: black;
+        text-align: center;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover{
+        background-color: green;
+        color: white;
+    }
+</style>
+</head>
+<body>
+    <h1>HTML Form</h1>
+    <h1>Students Details</h1>
+    <p>Student Name:<input type="text" id="sname" value=""></p> 
+    <p>Student Branch:<input type="text" id="sbranch" value=""></p> 
+    <p>Student RollNo:<input type="number" id="srn" value=""></p> <br></br>
+
+    <button id="btn1">Set Student Name</button>
+    <button id="btn2">Set Student Branch</button>
+    <button id="btn3">Set Student RollNo</button>
+</body>
+</html>
 
 
 
 
+							 jQuery – Add Element
+						 -------------------------------------
 
-					
+Here we will learn how to add new elements to a web page using jQuery. Let us see the jQuery methods to add new content:
 
-
-
-
-
-
-
-
-
+1. append()  : The append() method in jQuery is used to add the content at the end of the selected element.
+2. after()   : The after() method in jQuery is used to add the content after the selected element.
+3. prepend() : The prepend() method in jQuery is used to add the content at the start of the selected element.
+4. before()  : The before() method in jQuery is used to add the content before the selected element.
 
 
+1. jQuery append() Method :
+---------------------------
+The append() method in jQuery is used to add the content at the end of the selected element. Let us see an example wherein we will append text to the <h1> element:
 
+<html>
+<head>
+<title>append() method</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+$(document).ready(function(){
+   $("#btn1").click(function(){
+    $("h1").append("Ravi Prakash");
+    });
+});
+</script>
+<style>
+    h1{
+        text-align: center;
+    }
+    button{
+        background-color: antiquewhite;
+        font-size: 20px;
+        height: 35px;
+        color: black;
+        text-align: center;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-left: 700px;
+    }
+    button:hover{
+        background-color: green;
+        color: white;
+    }
+</style>
+</head>
+<body>
+    <h1>jQuery </h1>
+    <h2>We will appending a word in above heading</h2>
+    <h2>click the below button to append</h2>
+    <button id="btn1">Append</button>
+</body>
+</html>
+
+
+2. jQuery after() Method :
+--------------------------
+The after() method in jQuery is used to add the content after the selected element. Let us see an example wherein we will add content after the <h2> element:
+
+<html>
+<head>
+<title>after() method</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#btn").click(function(){
+    $("h2").after("<p> added after</p>");
+  });
+});
+</script>
+</head>
+<body>
+<h1>Demo Heading 1</h1>
+<h2>Demo Heading 2</h2>
+<h2>Demo Heading 2</h2>
+<h3>Demo Heading 3</h3>
+<p>Click the below button to add content after the h2 heading</p>
+<button id="btn">Add Content after h2 element</button>
+</body>
+</html>
+
+
+
+3.jQuery prepend() Method :
+---------------------------
+The prepend() method in jQuery is used to add the content at the start of the selected element. Let us see an example wherein we will prepend text to the <h1> element:
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#btn").click(function(){
+    $("h1").prepend("<em>Demo </em>");
+  });
+});
+</script>
+</head>
+<body>
+<h1>Heading</h1>
+<p>We will prepend a word in the above heading.</p>
+<p>Click the below button to prepend</p>
+<button id="btn">Prepend</button>
+</body>
+</html>
+
+
+4.jQuery before() Method :
+--------------------------
+The before() method in jQuery is used to add the content before the selected element. Let us see an example wherein we will add content before the <h2> element:
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#btn").click(function(){
+    $("h2").before("<p> Demo Text</p>");
+  });
+});
+</script>
+</head>
+<body>
+<h1>Demo Heading 1</h1>
+<h2>Demo Heading 2</h2>
+<h2>Demo Heading 2</h2>
+<h3>Demo Heading 3</h3>
+<p>Click the below button to add content before the h2 heading</p>
+ 
+<button id="btn">Add Content before h2 element</button>
+ 
+</body>
+</html>
+
+
+							       jQuery – Remove Element
+						 	-------------------------------------
+
+In this lesson, we will learn how to remove elements from a web page using jQuery. Let us see the jQuery methods to remove content:
+
+1. remove()
+2. empty()
+
+
+1.jQuery remove() method :
+--------------------------
+The remove() method in jQuery is used to remove the selected element and its child elements. In the below example, we will remove the <p> element:
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>remove() method</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#btn").click(function(){
+    $("p").remove();
+  });
+});
+</script>
+<style> 
+    p {
+      height:50px;
+      width:500px;
+      border:1px solid black;
+      background:orange;
+      color: blue;
+    }
+    button{
+        background-color: antiquewhite;
+        font-size: 20px;
+        height: 35px;
+        color: black;
+        text-align: center;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-left: 200px;
+    }
+    button:hover{
+        background-color: green;
+        color: white;
+    }
+</style>
+</head>
+<body>
+<h1>remove() method</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, illum.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, illum.</p>
+<p>Click the below button to add content before the h2 heading</p>
+<button id="btn">Remove</button>
+</body>
+</html>
+
+
+1.jQuery empty() method :
+-------------------------
+The empty() method in jQuery is used to remove the child elements and content. It takes elements out of the DOM but will not remove the element. In the below example, we will remove the content of the <p> element but <p> will not get removed:
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#btn").click(function(){
+    $("p").empty();
+  });
+});
+</script>
+<style> 
+    p {
+      height:50px;
+      width:500px;
+      border:1px solid black;
+      background:orange;
+      color: blue;
+    }
+    button{
+        background-color: antiquewhite;
+        font-size: 20px;
+        height: 35px;
+        color: black;
+        text-align: center;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-left: 200px;
+    }
+    button:hover{
+        background-color: green;
+        color: white;
+    }
+    </style>
+</head>
+<body>
+<h1>empty() method</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, illum.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, illum.</p>
+<p>Click the below button to add content before the h2 heading</p>
+ 
+<button id="btn">Empty</button>
+ 
+</body>
+</html>
