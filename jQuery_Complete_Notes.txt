@@ -140,10 +140,12 @@ slideToggle()
 eq
 lt
 gt
-remove
-after
-append
-prepend
+remove()
+empty()
+append()
+after()
+prepend()
+before()
 
 
 
