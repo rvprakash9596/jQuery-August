@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Animation div 2</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("div").animate({
+                left :`200px`,
+                height:`100px`,
+                width:`400px`,
+                fontSize: `30px`
+            });
+        });
+    });
+</script>
+<style>
+    div{
+        position: absolute;
+        background-color: black;
+        color: yellow;
+        padding: 20px;
+        border: 12px double blue;
+        margin-top: 10px;
+        border-radius: 8px;
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+    <h1>RaviPrakash4344</h1>
+    <p>Click the below button to animate the below box.</p>
+    <button>Animate Button</button>
+    <div>This box will get animated using jQuery and the properties will also changed</div>
+</body>
+</html>
