@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>prepend() method</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#btn").click(function(){
+    $("h1").prepend("<em>Demo </em>");
+  });
+});
+</script>
+</head>
+<body>
+<h1>Heading</h1>
+<p>We will prepend a word in the above heading.</p>
+<p>Click the below button to prepend</p>
+<button id="btn">Prepend</button>
+</body>
+</html>
