@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>append() method</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+$(document).ready(function(){
+   $("#btn1").click(function(){
+    $("h1").append("Ravi Prakash");
+    });
+});
+</script>
+<style>
+    h1{
+        text-align: center;
+    }
+    button{
+        background-color: antiquewhite;
+        font-size: 20px;
+        height: 35px;
+        color: black;
+        text-align: center;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-left: 700px;
+    }
+    button:hover{
+        background-color: green;
+        color: white;
+    }
+</style>
+</head>
+<body>
+    <h1>jQuery </h1>
+    <h2>We will appending a word in above heading</h2>
+    <h2>click the below button to append</h2>
+    <button id="btn1">Append</button>
+</body>
+</html>
