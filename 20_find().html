@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>find() method in jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("div").find("li").css({"color":"aqua","font-size":"24px" , "border":"4px solid red"})
+        });
+    </script>
+</head>
+<style>
+    .descendants *{
+        display: block;
+        border: 4px dashed teal;
+        color: orange;
+        font-size: 20px;
+        padding: 10px;
+        margin: 10px;
+    }
+</style>
+<body>
+    <h1>find() in jQuery</h1>
+    <div class="descendants">
+        <div style="width: 600px;">div (great grandparent)
+            <ul>ul (grandparent)
+                <li>li (parent)
+                    <span>span</span>
+                    <span>span</span>
+                </li>
+                <li>li
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
