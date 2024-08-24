@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Set val() method</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+$(document).ready(function(){
+   $("#btn1").click(function(){
+    $("#sname").val("Ravi Prakash");
+   });
+   $("#btn2").click(function(){
+    $("#sbranch").val("CSE");
+   });
+   $("#btn3").click(function(){
+    $("#srn").val("27");
+   })
+});
+</script>
+<style>
+    h1{
+        text-align: center;
+    }
+    button{
+        background-color: antiquewhite;
+        font-size: 20px;
+        height: 35px;
+        color: black;
+        text-align: center;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover{
+        background-color: green;
+        color: white;
+    }
+</style>
+</head>
+<body>
+    <h1>HTML Form</h1>
+    <h1>Students Details</h1>
+    <p>Student Name:<input type="text" id="sname" value=""></p> 
+    <p>Student Branch:<input type="text" id="sbranch" value=""></p> 
+    <p>Student RollNo:<input type="number" id="srn" value=""></p> <br></br>
+
+    <button id="btn1">Set Student Name</button>
+    <button id="btn2">Set Student Branch</button>
+    <button id="btn3">Set Student RollNo</button>
+</body>
+</html>
