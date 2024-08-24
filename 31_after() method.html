@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>after() method</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#btn").click(function(){
+    $("h2").after("<p> added after</p>");
+  });
+});
+</script>
+</head>
+<body>
+<h1>Demo Heading 1</h1>
+<h2>Demo Heading 2</h2>
+<h2>Demo Heading 2</h2>
+<h3>Demo Heading 3</h3>
+<p>Click the below button to add content after the h2 heading</p>
+ 
+<button id="btn">Add Content after h2 element</button>
+ 
+</body>
+</html>
