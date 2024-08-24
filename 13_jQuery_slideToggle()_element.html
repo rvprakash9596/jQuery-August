@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>Slide Toggle</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $("#d1").click(function(){
+            $("#d2").slideToggle("1000");
+            // $("#d2").slideToggle("fast");
+            // $("#d2").slideToggle("slow");
+        });
+    });
+</script>
+<style>
+    #d1,#d2{
+       padding: 15px;
+       text-align: center;
+       font-size: 25px;
+       background-color: black;
+       border: 2px double red;
+       color: yellow;
+       border-radius: 5px;
+    }
+    #d2{
+        padding: 75px;
+        font-size: 35px;
+        /* background-color: orangered; */
+        border: 5px solid blue;
+    }
+    #d1{
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+    <p>Click the below div to Slide Toggle.. </p>
+    <div id="d1">Slide Toggle by clicking here</div>
+    <div id="d2" style="margin-top: 20px;">Saurabh Caterers</div>
+</body>
+</html>
