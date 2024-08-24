@@ -1,0 +1,44 @@
+<html>
+<head>
+<title></title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+$(document).ready(function(){
+   $("#btn1").click(function(){
+    $("p").text("This text is adding using jQuery text() method");
+   });
+   $("#btn2").click(function(){
+    $("p").html("This text is <em> adding using jQuery text()</em> <b> method</b>.");
+   });
+});
+</script>
+<style>
+    p{
+        background-color: black;
+        color: white;
+        font-size: 30px;
+        display: inline;
+    }
+    button{
+        background-color: antiquewhite;
+        font-size: 20px;
+        height: 35px;
+        color: black;
+        text-align: center;
+        border-radius: 5px;
+        cursor: pointer;
+        line-height: 35px;
+    }
+    button:hover{
+        background-color: green;
+        color: white;
+    }
+</style>
+</head>
+<body>
+    <p>Click below button to set the Text and HTML</p><br>
+
+    <button id="btn1">Set the Text</button>
+    <button id="btn2">Set the HTML</button>
+</body>
+</html>
