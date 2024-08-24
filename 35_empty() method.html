@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#btn").click(function(){
+    $("p").empty();
+  });
+});
+</script>
+<style> 
+    p {
+      height:50px;
+      width:500px;
+      border:1px solid black;
+      background:orange;
+      color: blue;
+    }
+    button{
+        background-color: antiquewhite;
+        font-size: 20px;
+        height: 35px;
+        color: black;
+        text-align: center;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-left: 200px;
+    }
+    button:hover{
+        background-color: green;
+        color: white;
+    }
+    </style>
+</head>
+<body>
+<h1>empty() method</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, illum.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, illum.</p>
+<p>Click the below button to add content before the h2 heading</p>
+ 
+<button id="btn">Empty</button>
+ 
+</body>
+</html>
