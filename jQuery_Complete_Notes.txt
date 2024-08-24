@@ -12,27 +12,43 @@ It was created by "John Resig" to ease JavaScript Programming.
 After learning the concept of jQuery , it will be easier for a developer to work with JavaScript.
 It is a "write less, do more" JavaScript library.
 
+
+Write less , do more .
 jQuery eases JavaScript code.
 The same code you run in the JavaScript with many lines can be easily worked with jQuery and lessened to a single line of code.
 
 
-						   	   jQuery - Features
+						   	      jQuery - Features
 						--------------------------------------
+						
 Following are the main features of jQuery :
+-------------------------------------------
+Simple
+DOM Traversing
+DOM Manipulation
+Event Handling
+Styles Modification
+Effects and Animation
+jQuery - UI
+CSS3 Compliant
+Light Weight Library
+Cross Browser Support
+Interpreted
+-------------------------------------------
 
 Selectors : Use the jQuery selectors to select an HTML element and manipulate it.
-
+-----------
 Animation : Animate a div or any other element with jQuery.
-
+-----------
 CSS Manipulation : Manipulate an element and apply CSS style to it with jQuery.
-
+------------------
 jQuery AJAX : jQuery has a rich set of AJAX methods for developing modern web Applications.
+-------------
+Event Methods : Call event methods with jQuery. Events are the user's actions , a web page can respond to --------------- , such as page load , mouse click , keystroke etc..
 
-Event Methods : Call event methods with jQuery. Events are the user's actions , a web page can respond to , such as page load , mouse click , keystroke etc..
+jQuery Traversing : jQuery provides DOM traversal methods to locate descendent elements , find sibling ------------------- elements etc.
 
-jQuery Traversing : jQuery provides DOM traversal methods to locate descendent elements , find sibling elements etc.
-
-Plugins : jQuery has many plugins such as for creating split pages, create slideshow , progressbar , etc. With that , you can also create your own custom plugin.
+Plugins : jQuery has many plugins such as for creating split pages, create slideshow , progressbar , etc. --------- With that , you can also create your own custom plugin.
 
 							   
 							jQuery - Set Environment
@@ -54,7 +70,7 @@ Step 1: Install VS Code.
 Step 2: Set Environment , add jQuery on a webpage and understand the structure.
 
 
-							jQuery - Add jQuery in a webpage
+							  jQuery - Add jQuery in a webpage
 						----------------------------------------------
 
 <html>
@@ -104,6 +120,33 @@ Program 1:
 </html>
 
 
+								jQuery functions :
+								------------------
+val()
+text()
+html()
+attr()
+css()
+show()
+hide()
+toggle()
+fadeIn()
+fadeOut()
+fadeToggle()
+fadeTo()
+slideUp()
+slideDown()
+slideToggle()
+eq
+lt
+gt
+remove
+after
+append
+prepend
+
+
+
 								jQuery - click() Method
 							---------------------------------------
 
@@ -142,7 +185,8 @@ $(document).ready(function(){
 							jQuery - Selectors
 						----------------------------------
 
-jQuery Selectors is used to select an HTML element and manipulate it. Selector starts with a dollar sign ($) and parentheses as you can see below.
+jQuery Selectors is used to select an HTML element and manipulate it. 
+Selector starts with a dollar sign ($) and parentheses as you can see below.
 
 $()
 
@@ -948,7 +992,89 @@ Let us learn about each method one by one:
 
 2.The parents() method (ancestors) in jQuery :
 ----------------------------------------------
+The jQuery parents() method returns all the ancestor elements of the selected element. Let us see an example wherein we will return the ancestors of the <span> element:
 
+Examle 
+-------
+
+<html>
+<head>
+<title>jQuery Traversing - parents() method</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("span").parents().css({"color":"red", "font-size":"24px" ,"border":"5px solid green"});
+    });
+</script>
+<style>
+    .ancestors *{
+        display: block;
+        border: 5px solid black;
+        font-size: 20px;
+        margin-top: 10px;
+        padding: 10px;    
+    }
+</style>
+</head>
+<body>
+<h1 style="text-align: center; color:red ">jQuery-Traversing : parent()</h1>
+<div class="ancestors">
+    <div style="width: 600px;"> div (great grandparent)
+        <ul> ul (grandparent)
+            <li> li (parent)
+                <span>span</span>
+                <span>span</span>
+            </li>
+            <li>li
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
+
+
+3.The parentsUntil() method (ancestors) in jQuery :
+---------------------------------------------------
+If you want to return the ancestors between two elements, then use the parentsUntil() method in  jQuery. Let us see an example wherein we will return the ancestors between <span> and <div>:
+
+Example :
+---------
+<html>
+<head>
+<title>jQuery Traversing - parentsUntil() method</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("span").parentsUntil("div").css({"color":"red", "font-size":"24px" ,"border":"5px solid green"});
+    });
+</script>
+<style>
+    .ancestors *{
+        display: block;
+        border: 2px dashed black;
+        font-size: 20px;
+        margin-top: 10px;
+        padding: 10px;    
+    }
+</style>
+</head>
+<body>
+<h1 style="text-align: center; color:red ">jQuery-Traversing : parentsUntil()</h1>
+<div class="ancestors">
+    <div style="width: 600px;"> div (great grandparent)
+        <ul> ul (grandparent)
+            <li> li (parent)
+                <span>span</span>
+                <span>span</span>
+            </li>
+            <li>li
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
 
 
 
