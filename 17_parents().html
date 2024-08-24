@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>jQuery Traversing - parents() method</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("span").parents().css({"color":"red", "font-size":"24px" ,"border":"5px solid green"});
+    });
+</script>
+<style>
+    .ancestors *{
+        display: block;
+        border: 5px solid black;
+        font-size: 20px;
+        margin-top: 10px;
+        padding: 10px;    
+    }
+</style>
+</head>
+<body>
+<h1 style="text-align: center; color:red ">jQuery-Traversing : parents()</h1>
+<div class="ancestors">
+    <div style="width: 600px;"> div (great grandparent)
+        <ul> ul (grandparent)
+            <li> li (parent)
+                <span>span</span>
+                <span>span</span>
+            </li>
+            <li>li
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
