@@ -1873,3 +1873,45 @@ $(document).ready(function(){
  
 </body>
 </html>
+
+
+
+
+							jQuery – Add CSS Class
+						=======================================
+
+To add a class to the selected element, use the addClass() method in jQuery. We can add:
+
+1.A single class
+2.Multiple classes
+3.Add a single class to different elements
+4.Add multiple classes to different elements
+
+							1.Add a single class
+						     ==========================
+We will add a single class demo here using the addClass() method in jQuery:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
