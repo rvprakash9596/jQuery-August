@@ -7,20 +7,25 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script>
         $(document).ready(function(){
-            $("button").click(finction(){
-                $("h1").addClass("demo");
-            });
+          $("button").click(function(){
+            $("h1").addClass("demo");
+          });
         });
-    </script>
-    <style>
-        .demo{
-            background-color: red;
-            color: greenyellow;
+        </script>
+        <style>
+        .demo {
+          background: navy;
+          color: white;
+          display: inline;
+          padding: 10px;
+          border-radius: 5px;
+          border: 5px double red;
+          margin-left: 100px;
         }
-    </style>
+        </style>
 </head>
 <body>
-    <h1>This is heading1</h1>
+    <h1>This is addClass() Method</h1>
     <p>This is a paragraph1</p>
 
     <h2>This is 2nd level heading</h2>
