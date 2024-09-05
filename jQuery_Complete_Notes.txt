@@ -1891,6 +1891,44 @@ To add a class to the selected element, use the addClass() method in jQuery. We 
 						     ==========================
 We will add a single class demo here using the addClass() method in jQuery:
 
+Example :
+---------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addClass() Method</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $("button").click(function(){
+            $("h1").addClass("demo");
+          });
+        });
+        </script>
+        <style>
+        .demo {
+          background: navy;
+          color: white;
+          display: inline;
+          padding: 10px;
+          border-radius: 5px;
+          border: 5px double red;
+          margin-left: 100px;
+        }
+        </style>
+</head>
+<body>
+    <h1>This is addClass() Method</h1>
+    <p>This is a paragraph1</p>
+    <h2>This is 2nd level heading</h2>
+    <p>This is a Paragraph2</p>
+    <button>Add a single class</button>
+</body>
+</html>
+
 
 
 
