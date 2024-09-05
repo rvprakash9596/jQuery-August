@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addClass() Method</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(finction(){
+                $("h1").addClass("demo");
+            });
+        });
+    </script>
+    <style>
+        .demo{
+            background-color: red;
+            color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is heading1</h1>
+    <p>This is a paragraph1</p>
+
+    <h2>This is 2nd level heading</h2>
+    <p>This is a Paragraph2</p>
+
+    <button>Add a single class</button>
+</body>
+</html>
