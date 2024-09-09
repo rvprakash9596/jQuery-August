@@ -1936,10 +1936,13 @@ Example :
 
 To remove a class from the selected element, use the removeClass() method in jQuery. We can remove:
 
-Remove a single class
-Remove a single class from different elements
+1.Remove a single class
+2.Remove a single class from different elements
 
 
+							1.Remove a single class
+						    ================================
+To remove a single class on a web page, use the removeClass() method in jQuery. In the below example, we will remove a single class demo here:
 
 
 
