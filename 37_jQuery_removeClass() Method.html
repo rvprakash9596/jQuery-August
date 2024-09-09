@@ -4,8 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jQuery removeClass() Method</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $("button").click(function(){
+            $("h1").removeClass("demo");
+          });
+        });
+    </script>
+    <style>
+        .demo {
+          background: red;
+          color: white;
+        }
+    </style>
 </head>
 <body>
-    
+<h1 class="demo">Heading 1</h1>
+<p>This is demo text</p>
+<button>Remove a single class</button>
 </body>
 </html>
