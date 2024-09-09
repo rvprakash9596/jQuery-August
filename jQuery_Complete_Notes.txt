@@ -1931,6 +1931,13 @@ Example :
 
 
 
+							JQuery – Remove CSS Class
+						==========================================
+
+To remove a class from the selected element, use the removeClass() method in jQuery. We can remove:
+
+Remove a single class
+Remove a single class from different elements
 
 
 
