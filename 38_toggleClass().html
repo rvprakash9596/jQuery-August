@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>toggleClass() Method</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("h1, h2, h3").toggleClass("demo");
+  });
+});
+</script>
+<style>
+.demo {
+  background: blue;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  border: 5px dashed red;
+  /* display: inline; */
+}
+</style>
+</head>
+<body>
+ 
+<h1>Heading 1</h1>
+ 
+<p>This is demo text</p>
+ 
+<h2>Heading 2</h2>
+ 
+<p>This is another demo text.</p>
+ 
+<h3>Heading 3</h3>
+ 
+<p>This is yet another demo text.</p>
+ 
+<button>toggleClass()</button>
+ 
+</body>
+</html>
