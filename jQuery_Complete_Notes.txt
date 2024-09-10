@@ -2019,7 +2019,7 @@ $(document).ready(function(){
                                         jQuery – Toggle CSS Class
                                     ==================================
 
-
+To add or remove a class at the click of a button i.e., toggle, use the toggleClass() method in jQuery. Let us see an example wherein we add a class and set the CSS properties for background color and font color for <h1>, <h2>, and <h3> elements with the click of a button. The same button clicked again will remove the CSS we set before i.e. the class will be removed:
 
 
 
