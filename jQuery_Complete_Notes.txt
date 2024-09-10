@@ -2016,6 +2016,8 @@ $(document).ready(function(){
 
 
 
+                                        jQuery – Toggle CSS Class
+                                    ==================================
 
 
 
