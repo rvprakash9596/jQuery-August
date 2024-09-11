@@ -2059,7 +2059,8 @@ $(document).ready(function(){
 
 
 
-
+                                        jQuery – Dimension Methods
+                                    ==================================
 
 
 
