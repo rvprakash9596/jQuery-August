@@ -6,8 +6,12 @@
     <title>width() method</title>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script>
-        $(document).ready(function{
-            
+        $(document).ready(function(){
+            $("button").click(function(){
+                let txt = "";
+                txt+="Width ="+$(".demo").width();
+                $(".demo").html(txt);
+            });
         });
     </script>
     <style>
