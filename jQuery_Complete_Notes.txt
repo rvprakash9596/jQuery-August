@@ -2061,10 +2061,17 @@ $(document).ready(function(){
 
                                         jQuery – Dimension Methods
                                     ==================================
+We all know about Margins, Padding, Borders, etc of an element, but some jQuery built-in methods also calculate the dimensions of an element on a web page. These methods get or set the width or height of an element and also cover the concept of excluding and/ or including padding, border, and margin. The following are the methods:
 
+1.width(): Get or set the width of an element. Excludes padding, border, and margin
+2.height(): Get or set the height of an element. Excludes padding, border, and margin
+3.innerWidth(): Get or set the width of an element. Includes the padding
+4.innerHeight(): Get or set the height of an element. Includes the padding
+5.outerWidth(): Get or set the width of an element. It includes the padding and border
+6.outerHeight(): Get or set the height of an element. It includes the padding and border
 
-
-
+                                        1.jQuery width() method
+                                    ==============================
 
 
 
