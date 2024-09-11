@@ -2122,6 +2122,7 @@ Example :
 </body>
 </html>
 
-
+                                    2.jQuery height() method
+                                    ==============================
 
 
