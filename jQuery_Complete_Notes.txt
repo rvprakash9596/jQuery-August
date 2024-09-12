@@ -2124,5 +2124,7 @@ Example :
 
                                     2.jQuery height() method
                                     ==============================
+The height() method in jQuery is used to get or set the height of an element. It excludes padding, border, and margin.
+
 
 
