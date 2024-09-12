@@ -2122,7 +2122,7 @@ Example :
 </body>
 </html>
 
-                                    2.jQuery height() method
+                                       2.jQuery height() method
                                     ==============================
 The height() method in jQuery is used to get or set the height of an element. It excludes padding, border, and margin.
 
@@ -2175,5 +2175,15 @@ Example :
 <p>Click the above button to get the height of the box</p>
 </body>
 </html>
+
+                                            2.jQuery innerWidth() method
+                                         ===================================
+The innerWidth() method in  jQuery is used to get or set the width of an element. It includes padding.
+
+Example :
+---------
+
+
+
 
 
