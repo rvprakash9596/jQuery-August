@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>height() method</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                let txt="";
+                txt=txt+"Height ="+$(".demo").height();
+                $(".demo").html(txt);
+            });
+        });
+    </script>
+    <style>
+        .demo{
+            height: 130px;
+            width: 400px;
+            padding: 15px;
+            margin: 12px;
+            border: 2px solid yellow;
+            background: teal;
+            color: white;
+            font-size: 30px;
+            text-align: center;
+            line-height: 130px;
+        }
+        button {
+            background: black;
+            color: white;
+            font-size: 25px;
+            cursor: pointer;
+            margin-left: 180px;
+            border-radius: 4px;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+<h1>Get the Height</h1>
+<div class="demo"></div><br>
+<button>Height</button>
+<p>Click the above button to get the height of the box</p>
+</body>
+</html>
