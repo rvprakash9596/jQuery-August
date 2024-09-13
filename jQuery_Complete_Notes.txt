@@ -2236,7 +2236,7 @@ Example :
 
                                 jQuery innerHeight() method
                             ====================================
-
+The innerHeight() method in jQuery is used to get or set the height of an element. It includes padding.
 
 
 
