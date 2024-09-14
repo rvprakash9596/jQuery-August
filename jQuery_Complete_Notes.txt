@@ -2347,3 +2347,11 @@ Example :
     <p>Click the above button to get the outer width of the box</p>
 </body>
 </html>
+
+
+                                    jQuery outerHeight() method
+                                ===================================
+The outerHeight() method in jQuery is used to get or set the height of an element. It includes the padding and border.
+
+
+
