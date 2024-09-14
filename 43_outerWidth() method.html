@@ -4,9 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>outerWidth() method</title>
-    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $("button").click(function(){
+        var txt = "";
+        txt += "Outer Width = " + $(".demo").outerWidth();
+        $(".demo").html(txt);
+        });
+    });
+    </script>
+    <style>
+        .demo {
+                height: 130px;
+                width: 400px;
+                padding: 15px;
+                margin: 12px;
+                border: 2px double red;
+                background: black;
+                color: yellow;
+                font-size: 30px;
+                margin:0px auto;
+                text-align: center;
+                line-height: 130px;
+                }
+                button {
+                background: black;
+                color: white;
+                font-size: 25px;
+                margin-left: 700px;
+                cursor: pointer;
+                border-radius: 2px;
+                }
+                h1,p{
+                text-align: center;
+                }
+    </style>
 </head>
 <body>
-    
+    <h1>Get the Outer Width</h1>
+    <div class="demo"></div><br>
+    <button>Click Me</button>
+    <p>Click the above button to get the outer width of the box</p>
 </body>
 </html>
