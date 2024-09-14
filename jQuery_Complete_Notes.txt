@@ -2291,5 +2291,9 @@ Example :
 </body>
 </html>
 
+                                jQuery outerWidth() method
+                            ==================================
+The outerWidth() method in  jQuery is used to get or set the width of an element. It includes the padding and border.
+
 
 
