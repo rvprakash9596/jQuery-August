@@ -2457,7 +2457,8 @@ Example:
 </body>
 </html>
 
-
+                                    jQuery – Set CSS Properties
+                                ===================================
 
 
 
