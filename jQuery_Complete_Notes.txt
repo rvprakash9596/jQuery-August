@@ -2499,6 +2499,34 @@ To set more than one CSS property, use the same css() method, and that too only 
 
 Example :
 ---------
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Set Multiple css() method </title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+            $("h2").css({"background": "black","border":"2px solid red" ,"color":"white", "font-size": "28px","borderRadius":"5px","display":"inline"});
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Heading 1</h1>
+    <p>This is demo text.</p>
+    <h2>Heading 2</h2>
+    <p>This is another demo text.</p>
+    <h2>Heading 2</h2>
+    <p>This is yet another demo text.</p>
+    
+    <button>Set Multiple CSS Properties</button>
+  </body>
+</html>
 
+
+=================================================================================================================
 
 
