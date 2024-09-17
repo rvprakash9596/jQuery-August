@@ -2461,7 +2461,15 @@ Example:
                                 ===================================
 The css() method is used in jQuery to set the CSS properties. In the below example, we will set the color property for the <h2> element. The font color property will be set to red for the <h2> element:
 
+Example :
+---------
 
+
+
+
+                                    Set Multiple CSS Properties
+                                ===================================
+To set more than one CSS property, use the same css() method, and that too only once. In the below example, we will set 3 properties for the <h1> elements. Let us see the example:
 
 
 
