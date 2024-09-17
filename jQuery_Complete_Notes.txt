@@ -2497,6 +2497,8 @@ Example :
                                 ===================================
 To set more than one CSS property, use the same css() method, and that too only once. In the below example, we will set 3 properties for the <h1> elements. Let us see the example:
 
+Example :
+---------
 
 
 
