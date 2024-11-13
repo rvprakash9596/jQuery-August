@@ -44,11 +44,14 @@ CSS Manipulation : Manipulate an element and apply CSS style to it with jQuery.
 ------------------
 jQuery AJAX : jQuery has a rich set of AJAX methods for developing modern web Applications.
 -------------
-Event Methods : Call event methods with jQuery. Events are the user's actions , a web page can respond to --------------- , such as page load , mouse click , keystroke etc..
+Event Methods : Call event methods with jQuery. Events are the user's actions , a web page can respond to 
+--------------- , such as page load , mouse click , keystroke etc..
 
-jQuery Traversing : jQuery provides DOM traversal methods to locate descendent elements , find sibling ------------------- elements etc.
+jQuery Traversing : jQuery provides DOM traversal methods to locate descendent elements , find sibling elements etc.
+------------------- 
 
-Plugins : jQuery has many plugins such as for creating split pages, create slideshow , progressbar , etc. --------- With that , you can also create your own custom plugin.
+Plugins : jQuery has many plugins such as for creating split pages, create slideshow , progressbar , etc. 
+--------- With that , you can also create your own custom plugin.
 
 							   
 							jQuery - Set Environment
@@ -60,7 +63,7 @@ We can set environment for jQuery using any of the following methods :
 
 Method 1: Download jQuery from the official website jquery.com
 
-Method 2: directly use CDN i.e. Content Delivery network (faster).
+Method 2: directly use CDN i.e. Content Delivery Network (faster).
 
 Method 2: CDN for jQuery
 ------------------------
@@ -155,7 +158,8 @@ before()
 Use the jQuery click() method to trigger an event on the click of an element. For example, on click, it generates an alert box.
 
 Syntax : 	$(selector).click(function(){
---------		// code
+--------	// code
+
 		});
 
 
